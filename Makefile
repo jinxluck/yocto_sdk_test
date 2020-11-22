@@ -10,7 +10,7 @@ helloworldmmj: $(TARGET).c
 prefix=/usr/local
 
 install: helloworldmmj
-	install -m 777 helloworldmmj $(prefix)/bin
+	install -m 0777 helloworldmmj $(prefix)/bin
 
 .PHONY: install
 .PHONY: clean
