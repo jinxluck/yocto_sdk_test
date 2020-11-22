@@ -8,7 +8,7 @@ helloworldmmj: $(TARGET).c
 	$(CC) $(CFLAGS) ${LDFLAGS} -o $(TARGET) $(TARGET).c
 
 install: helloworldmmj
-	install -d ${B}/bin/helloworldmmj ${D}${bindir}
+	install -m 0755 ${S}/helloworldmmj ${D}${bindir}
 
 .PHONY: install
 .PHONY: clean
