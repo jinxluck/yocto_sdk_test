@@ -7,10 +7,8 @@ all: $(TARGET)
 helloworldmmj: $(TARGET).c
 	$(CC) $(CFLAGS) ${LDFLAGS} -o $(TARGET) $(TARGET).c
 
-prefix=/usr/bin
-
 install: helloworldmmj
-	install -m 0777 helloworldmmj $(prefix)
+	install -d ${D}/helloworldmmj
 
 .PHONY: install
 .PHONY: clean
