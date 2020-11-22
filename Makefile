@@ -1,10 +1,10 @@
 CFLAGS = -Wall -g -D_GNU_SOURCE
 
-TARGET = helloworld
+TARGET = helloworldmmj
 
 all: $(TARGET)
 
-helloworld: $(TARGET).c
+helloworldmmj: $(TARGET).c
 	$(CC) $(CFLAGS) ${LDFLAGS} -o $(TARGET) $(TARGET).c
 
 .PHONY: clean
