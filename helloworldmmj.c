@@ -7,7 +7,7 @@ int main()
 	for(count=0;count<10;count++)
 	{
 		printf("Hello World mmj test take2 \n");
-		print("%d",count);
+		printf("%d",count);
 	}
 
 	return 0;
